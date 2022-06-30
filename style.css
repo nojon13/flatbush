@@ -1,0 +1,153 @@
+*{
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    font-family: sans-serif;
+    filter:contrast(1.05);
+}
+
+body {
+    background-color: #444;
+    overflow: hidden;
+}
+
+#gameover {
+    margin: auto;
+    font-size: 13rem;
+    color: #ba1414;
+    text-align: center;
+    font-family: sans-serif;
+    font-weight: bolder;
+    position: absolute;
+    left: 170px;
+    z-index: 3;
+}
+
+#title {
+    margin: 0 auto;
+    font-size: 10rem;
+    color: #ba1414;
+    font-family: sans-serif;
+    font-weight: bolder;
+    position: absolute;
+    top: 150px;
+    left: 75px;
+    text-align: center;
+    z-index: 3;
+    display: block;
+}
+
+.btn {
+    margin: 10px auto;
+    text-align: center;
+    z-index: 4;
+    width: 170px;
+    height: 60px;
+    letter-spacing: 2px;
+    color: #cdd0d0;
+    font-size: 1.3rem;
+    font-weight: bold;
+    border-radius: 15px;
+    background: none;
+}
+
+.btn:hover {
+    background-color: #353535;
+    cursor: pointer;
+}
+
+#tryagain {
+    display: none;
+}
+
+#gogo {
+    visibility: visible;
+}
+
+#instructions {
+    display: block;
+    color: #cdd0d0;
+    font-weight: normal;
+}
+
+#game {
+    margin: 50px auto 0;
+    width: 1000px;
+    height: 500px;
+    border: 1px solid black;
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+}
+
+#character {
+    width: 150px;
+    height: 250px;
+    position: relative;
+    top: 250px;
+    left: 120px;
+    display: none;
+}
+
+#guy {
+    height: 250px;
+    filter: brightness(1.2);
+}
+
+#background {
+    height: 550px;
+    position: absolute;
+    animation: bg 33s infinite linear;
+    animation-play-state: paused;
+}
+
+#rat {
+    width: 200px;
+}
+
+
+#block {
+    width: 200px;
+    height: 250px;
+    position: absolute;
+    left: 1100px;
+    top: 320px;
+    animation: block 2s 12 linear;
+    animation-delay: 3.5s;
+    animation-play-state: paused;
+}
+
+@keyframes block {
+    0% {left: 1100px;}
+    100% {left: -100px;}
+}
+
+@keyframes jump {
+    0% {top: 250px;}
+    30% {top: 0;}
+    60% {top: 30px;}
+    100% {top: 250px;}
+}
+
+@keyframes bg {
+    0% {left: 0}
+    100% {left: -1651px}
+}
+
+.animate-jump {
+    animation: jump 700ms ease-in-out;
+}
+
+.dead {
+    width: 325px;
+    position: relative;
+    top: 60px;
+}
+
+.container {
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    z-index: 3;
+    text-align: center;
+}

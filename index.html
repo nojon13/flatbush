@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <title></title>
+        <link rel="stylesheet" href="style.css">
+        <script src="script.js" charset="utf-8" defer></script>
+    </head>
+    <body>
+
+        <div class="container">
+            <div id="game">
+                <h1 id="title">FLATBUSH</h1>
+                <h1 id="gameover"></h1>
+                <div>
+                    <img id="background" src="img/flatbush3crop.png" alt="">
+                </div>
+                <div id="character">
+                    <img id="guy" src="img/run-test-trans.gif" alt="">
+                </div>
+                <div id="block">
+                    <img id="rat" src="img/ratwalk2.gif" alt="">
+                </div>
+            </div>
+            <button class="btn" id="tryagain" type="button" name="button" onclick="history.go(0)">NEW GAME</button>
+            <button class="btn" id="gogo" type="button" name="button" onclick="gogo()">START</button>
+            <h3 id="instructions">To jump, click anywhere or press any key.</h3>
+        </div>
+    </body>
+</html>
